@@ -1,19 +1,19 @@
 ## Jeet Parekh
 
-I lead AI Platforms at Dailoqa - seven capabilities, their leads, and roughly
-forty engineers - and I am still hands-on, which my calendar has filed a formal
-complaint about. We build multi-agent systems for banks and NBFCs across loan
-origination, servicing, credit, and compliance, where a hallucination is a
-regulatory event, not a bad demo.
+I own the architecture of AI Platforms at Dailoqa, and I am still in the code.
+We build multi-agent systems for banks and NBFCs across loan origination,
+servicing, credit, and compliance, where a hallucination is a regulatory event,
+not a bad demo.
 
 Most agentic AI in banking does not fail on model quality. It fails on data
 access, approval chains, and nobody owning the failure case. That is the part
-the platform owns: orchestration that degrades safely, retrieval over data never
-meant to be read by a machine, and audit trails a risk team will actually sign.
+the architecture has to answer for: orchestration that degrades safely, retrieval
+over data never meant to be read by a machine, and audit trails a risk team will
+actually sign.
 
 ### The platform
 
-Seven capabilities, each with its own lead and four to five engineers:
+The pieces I design and hold together:
 
 - **Agentic Farm** - the agents, plus the orchestration that stops them
   improvising into a compliance incident
