@@ -1,58 +1,60 @@
 ## Jeet Parekh
 
-I own the architecture of AI Platforms at Dailoqa, and I am still in the code.
-We build multi-agent systems for banks and NBFCs across loan origination,
-servicing, credit, and compliance, where a hallucination is a regulatory event,
-not a bad demo.
+I'm the architect for AI Platforms at Dailoqa, and still in the code most days.
+We build multi-agent systems for banks and NBFCs - loan origination, servicing,
+credit, compliance - the kind of place where a hallucination is a regulatory
+event, not a bad demo.
 
-Most agentic AI in banking does not fail on model quality. It fails on data
-access, approval chains, and nobody owning the failure case. That is the part
-the architecture has to answer for: orchestration that degrades safely, retrieval
-over data never meant to be read by a machine, and audit trails a risk team will
-actually sign.
+Here's what most agentic AI in banking gets wrong: it doesn't fall over on model
+quality. It falls over on data access, approval chains, and nobody owning what
+happens when an agent is wrong. That's the part I actually spend my time on -
+making the thing degrade safely, pulling answers out of data nobody ever meant a
+machine to read, and leaving an audit trail a risk team will sign without
+flinching.
 
 ### The platform
 
-The pieces I design and hold together:
+The pieces I design and keep talking to each other:
 
-- **Agentic Farm** - the agents, plus the orchestration that stops them
-  improvising into a compliance incident
+- **Agentic Farm** - the agents, and the orchestration that keeps them from
+  improvising their way into a compliance incident
 - **Business Rules** - because not everything should be a prompt
 - **Agentic Testing and Evals** - proving it works before a regulator does
-- **RAG** - retrieval over documents never written for a machine to read
-- **Controls** - AI governance, auth, the LLM gateway, and RBAC: who and what an
-  agent is allowed to touch
-- **Intelligent Extraction** - turning unstructured mess into something auditable
+- **RAG** - retrieval over documents nobody wrote for a machine to read
+- **Controls** - governance, auth, the LLM gateway, RBAC; who and what an agent
+  is allowed to touch
+- **Intelligent Extraction** - turning unstructured mess into something you can
+  audit
 - **Agentic Data Interaction** - letting agents query the business without
   handing them the keys
 
 ### Before this
 
-Close to a decade across three technology cycles - decentralised identity and
-traceability on Hedera at The Hashgraph Group; CBDC, invoice financing, and
-KYC/GDPR workflows at Accenture. Different stacks, identical constraints:
-provenance, auditability, and designing for the failure you cannot prevent.
-B.Tech CS and MBA Finance (NMIMS). TOGAF Enterprise Architecture Practitioner.
+Close to a decade, three tech cycles. Decentralised identity and traceability on
+Hedera at The Hashgraph Group. CBDC, invoice financing, and KYC/GDPR work at
+Accenture. Different stack every time, same problem underneath: provenance,
+auditability, and designing for the failure you can't prevent. B.Tech in CS and
+an MBA in Finance from NMIMS, and a TOGAF practitioner cert somewhere in there
+too.
 
 ### Building and writing
 
 - **[keel](https://github.com/jeetparekh3005/keel)** - golden-path scaffolding
-  for production services across five languages: hexagonal, contract-driven,
-  signed and attested.
-- **[writeamp](https://github.com/jeetparekh3005/writeamp)** - a notebook on
-  software architecture and the trade-offs behind every decision.
+  for production services in five languages: hexagonal, contract-driven, signed
+  and attested.
+- **[writeamp](https://github.com/jeetparekh3005/writeamp)** - my notebook on
+  software architecture and the trade-offs behind the decisions.
 - **[design-patterns-unfolded](https://github.com/jeetparekh3005/design-patterns-unfolded)**
-  - storytelling design patterns across six languages.
+  - design patterns told as stories, across six languages.
 
-I write about what breaks in production, not what demos well.
+I mostly write about what breaks in production, not what demos well.
 
 ### Off the clock
 
-Powered by more coffee than any architecture review strictly requires. I collect
-stories and mythology - humanity's oldest systems for making chaos legible,
-which is also the day job. Strong opinions on films and far too much television.
-When the agents are behaving, I am usually out of network on a trail, trading
-tokens per second for metres of elevation.
+Too much coffee. I read a lot of mythology and old stories - still the best thing
+we ever built for making chaos make sense. Strong opinions on films, and more
+television than I will admit to. When the agents are behaving, I'm usually off on
+a trail somewhere with no signal.
 
 ### Elsewhere
 
